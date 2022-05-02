@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+int num,a,b,c,d,e,rev=0,temp;
+printf("enter the 5 digit number");
+scanf("%d",&num);
+temp=num;
+a=num%10;
+num=num/10;
+b=num%10;
+num=num/10;
+c=num%10;
+num=num/10;
+d=num%10;
+num=num/10;
+e=num;
+rev=a*10000+b*1000+c*100+d*10+e;
+if(temp==rev)
+{
+    printf("number is palindrome");
+}
+else
+{
+    printf("number is not palindrome");
+}
+
